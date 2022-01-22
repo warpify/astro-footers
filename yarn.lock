@@ -784,6 +784,11 @@ astro-lottie@^0.0.1:
   resolved "https://registry.yarnpkg.com/astro-lottie/-/astro-lottie-0.0.1.tgz#019301ffba9776a2648e9140d87f5d5dca929d73"
   integrity sha512-CYEL52PrbbjI+gFzLzS+Vx5clQX+BtV94qt45bFbBJo5TivmkeQplzZC/jt5YCywFC++/AhptBs3jDh+EhIHTA==
 
+astro-theme@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/astro-theme/-/astro-theme-0.0.1.tgz#d868650b69f0e1c174f52f878ad34c57efb7409c"
+  integrity sha512-KA4jBZ+MAV0hHriFTTBgYJi2qjIKvUKYOZal2wpwwondNE4XlZnH1lA3q42exXRfdqkjSkHB/UCN7cg4cWOvxg==
+
 astro@^0.22.17:
   version "0.22.17"
   resolved "https://registry.yarnpkg.com/astro/-/astro-0.22.17.tgz#0d9034860c845d61d7127b8921c724bb265bab3e"
