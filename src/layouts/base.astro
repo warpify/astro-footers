@@ -1,12 +1,12 @@
 ---
-import { FooterSimple } from "../index.js";
+import { Footer } from "../index.js";
 import routes from "../data/routes.json";
 
 interface Props {
 	pathname?: string;
 }
 
-const { pathname } = Astro.props as props;
+const { pathname } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -18,13 +18,11 @@ const { pathname } = Astro.props as props;
 	</head>
 
 	<body>
-
 		<main id="main">
 			<slot />
 		</main>
 
-		<FooterSimple />
-		
+		<Footer />
 	</body>
 </html>
 
