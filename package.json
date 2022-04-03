@@ -34,6 +34,7 @@
 		"standard-version": "^9.3.2"
 	},
 	"dependencies": {
+		"astro-form": "^0.0.2",
 		"astro-image": "^0.0.1",
 		"astro-localization": "^0.0.2",
 		"astro-theme": "^0.0.1"

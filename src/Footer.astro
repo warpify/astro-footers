@@ -1,10 +1,32 @@
 ---
+import { Form } from "astro-form";
 const { footer } = Astro.props;
+
+let subscribeForm = {
+	title: "Contact us",
+	action: "",
+	fields: [
+		{
+			name: "email",
+			label: "Email",
+			type: "email",
+			placeholder: "Enter your email",
+			disabled: true,
+			required: true
+		}
+	],
+	buttons: [
+		{
+			type: "submit",
+			title: "Send"
+		}
+	]
+};
 ---
 
 <footer aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
-	<div class="footer-container container">
+	<div class="container">
 		<div class="footer-content">
 			{footer && footer.sections && (
 				<div class="footer-columns">
@@ -26,15 +48,7 @@ const { footer } = Astro.props;
 				<div class="footer-newsletter">
 					<h3>Subscribe to our newsletter</h3>
 					<p>The latest news, articles, and resources, sent to your inbox weekly.</p>
-					<form>
-						<label for="email-address" class="sr-only">
-							Email address
-						</label>
-						<input type="email" name="email-address" id="email-address" autocomplete="email" required placeholder="Enter your email" />
-						<div class="subscribe-button">
-							<button type="submit">Subscribe</button>
-						</div>
-					</form>
+					<Form form={subscribeForm} horizontal={true} provider="netlify" honeypot={true} />
 				</div>
 			)}
 		</div>
@@ -102,7 +116,7 @@ const { footer } = Astro.props;
 	</div>
 </footer>
 
-<style global lang="scss">
+<style lang="scss">
 	.sr-only {
 		position: absolute;
 		width: 1px;
@@ -120,14 +134,8 @@ const { footer } = Astro.props;
 		padding: 0;
 	}
 	footer {
-		.footer-container {
-			padding-top: 4rem;
-			padding-bottom: 4rem;
-			padding-left: 2rem;
-			padding-right: 2rem;
-			margin-left: auto;
-			margin-right: auto;
-		}
+		margin-top: 5rem;
+		margin-bottom: 1rem;
 
 		.footer-content {
 			display: grid;
