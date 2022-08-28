@@ -1,7 +1,7 @@
 {
 	"name": "astro-footers",
 	"type": "module",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Collection of footers for astro",
 	"homepage": "https://github.com/warpsio/astro-footers",
 	"bugs": {
@@ -29,16 +29,16 @@
 		"release": "standard-version"
 	},
 	"devDependencies": {
-		"astro": "^1.0.0-rc.7",
+		"astro": "^1.1.1",
 		"prettier": "^2.7.1",
-		"prettier-plugin-astro": "^0.3.0",
+		"prettier-plugin-astro": "^0.5.3",
 		"standard-version": "^9.5.0",
-		"sass": "^1.54.3"
+		"sass": "^1.54.5"
 	},
 	"dependencies": {
-		"astro-form": "^0.0.3",
-		"astro-image": "^0.0.3",
-		"astro-localization": "^0.0.5",
-		"astro-theme": "^0.0.5"
+		"astro-form": "^0.0.7",
+		"astro-image": "^0.0.7",
+		"astro-localization": "^0.0.7",
+		"astro-theme": "^0.0.7"
 	}
 }
